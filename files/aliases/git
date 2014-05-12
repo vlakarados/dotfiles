@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+#                       GIT                     #
+
+alias g="git"
+
+function gcm() {
+	echo "Please enter commit message: "
+	read input_v
+	git commit -m "$input_v"
+	#echo "$input_v"
+}
+
+function gm() {
+	git merge "origin/$1"
+}
+# Remote management
+alias gfe="git fetch"
+alias gpl="git pull"
+alias gcl="git clone"
+alias gps="git push"
+
+# Stash
+alias gsp="git stash pop"
+alias gsl="git stash list"
+alias gsa="git stash apply"
+alias gss="git stash"
+
+# Stage
+alias gaa="git add -A"
+alias gus="git reset HEAD"
+
+# Resets
+alias grf="git checkout HEAD"
+
+# Log
+alias glg="git log --pretty=format:'%Creset%ci %C(bold black)%H%Creset %C(bold blue)%an %ae %Creset%Cred%d%Creset %n                                                                   %C(bold red)%s %Creset' --abbrev-commit"
+
+function gca() {
+	gaa
+	gcm
+}
+

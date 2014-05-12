@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# Common stuff
+
+alias phpinfo="php -i"
+alias phpini="php --ini"

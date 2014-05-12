@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+# Common stuff
+
+export CLICOLOR=1
+export LSCOLORS=cxFxGxDxBxegedabagaced
+
+alias ..="cd .."
+alias ll="ls -lA"
+alias l="ll"
+
+
+# Kill all tmux sessions
+alias killtmux="tmux ls | awk '{print $1}' | sed 's/://g' | xargs -I{} tmux kill-session -t {}"
+alias tmuxkill="tmux kill-session -t"
+
+alias monitor="tail -fn"
