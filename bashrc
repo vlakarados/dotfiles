@@ -13,4 +13,4 @@ if ! [ -n "$TMUX" ]; then
 fi
 
 # Remap CapsLock to F12
-xmodmap -e "keycode 66 = F12"
+xmodmap ~/dotfiles/capslock
