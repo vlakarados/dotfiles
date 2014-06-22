@@ -11,3 +11,6 @@ fi
 if ! [ -n "$TMUX" ]; then
   tmuxinator start default
 fi
+
+# Remap CapsLock to F12
+xmodmap -e "keycode 66 = F12"
