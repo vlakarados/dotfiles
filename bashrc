@@ -9,7 +9,7 @@ fi
 
 # Run tmuxinator if we're not in a tmux session already
 if ! [ -n "$TMUX" ]; then
-  tmuxinator start default
+  # tmuxinator start default
 fi
 
 # Remap CapsLock to F12
